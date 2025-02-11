@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AAlkhreet\\source\\Git Connect Hub Dashboard\\Voedselhulp\\Voedselbank\\ClassLibrary1\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\AAlkhreet\\source\\Git Connect Hub Dashboard\\Voedselhulp\\Voedselbank\\ClassLibrary1\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\AAlkhreet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AAlkhreet\\source\\Git Connect Hub Dashboard\\Voedselhulp\\Voedselbank\\ClassLibrary1\\obj\\",
+      "outputPath": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
