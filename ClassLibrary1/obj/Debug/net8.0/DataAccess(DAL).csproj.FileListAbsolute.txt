@@ -1,0 +1,6 @@
+C:\Users\AAlkhreet\source\Voedselbank\ClassLibrary1\obj\Debug\net8.0\DataAccess(DAL).csproj.AssemblyReference.cache
+C:\Users\AAlkhreet\source\Voedselbank\ClassLibrary1\obj\Debug\net8.0\DataAccess(DAL).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AAlkhreet\source\Voedselbank\ClassLibrary1\obj\Debug\net8.0\DataAccess(DAL).AssemblyInfoInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\ClassLibrary1\obj\Debug\net8.0\DataAccess(DAL).AssemblyInfo.cs
+C:\Users\AAlkhreet\source\Voedselbank\ClassLibrary1\obj\Debug\net8.0\DataAccess(DAL).csproj.CoreCompileInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\ClassLibrary1\obj\Debug\net8.0\DataAccess(DAL).sourcelink.json

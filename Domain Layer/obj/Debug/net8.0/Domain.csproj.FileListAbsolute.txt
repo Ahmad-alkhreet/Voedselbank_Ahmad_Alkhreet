@@ -1,0 +1,6 @@
+C:\Users\AAlkhreet\source\Voedselbank\Domain Layer\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\AAlkhreet\source\Voedselbank\Domain Layer\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AAlkhreet\source\Voedselbank\Domain Layer\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\Domain Layer\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\AAlkhreet\source\Voedselbank\Domain Layer\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\Domain Layer\obj\Debug\net8.0\Domain.sourcelink.json

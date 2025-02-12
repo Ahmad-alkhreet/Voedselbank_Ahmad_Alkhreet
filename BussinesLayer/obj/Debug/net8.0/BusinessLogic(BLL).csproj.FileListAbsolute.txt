@@ -1,0 +1,6 @@
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\BusinessLogic(BLL).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\BusinessLogic(BLL).AssemblyInfoInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\BusinessLogic(BLL).AssemblyInfo.cs
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\BusinessLogic(BLL).csproj.CoreCompileInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\BusinessLogic(BLL).sourcelink.json
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\BusinessLogic(BLL).csproj.AssemblyReference.cache

@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}|BussinesLayer\\BusinessLogic(BLL).csproj|c:\\users\\aalkhreet\\source\\voedselbank\\bussineslayer\\services\\distributionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}|BussinesLayer\\BusinessLogic(BLL).csproj|solutionrelative:bussineslayer\\services\\distributionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|solutionrelative:classlibrary1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\database layer\\foodbankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|solutionrelative:database layer\\foodbankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\database layer\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|solutionrelative:database layer\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\dataaccess(dal).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|solutionrelative:classlibrary1\\dataaccess(dal).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +43,75 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DistributionService.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\Services\\DistributionService.cs",
+              "RelativeDocumentMoniker": "BussinesLayer\\Services\\DistributionService.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\Services\\DistributionService.cs",
+              "RelativeToolTip": "BussinesLayer\\Services\\DistributionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T16:50:47.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataBase.csproj",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\DataBase.csproj",
+              "RelativeDocumentMoniker": "Database Layer\\DataBase.csproj",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\DataBase.csproj",
+              "RelativeToolTip": "Database Layer\\DataBase.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-12T15:43:54.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ClassLibrary1\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:25:21.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataAccess(DAL).csproj",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccess(DAL).csproj",
+              "RelativeDocumentMoniker": "ClassLibrary1\\DataAccess(DAL).csproj",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccess(DAL).csproj",
+              "RelativeToolTip": "ClassLibrary1\\DataAccess(DAL).csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-12T12:49:02.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FoodBankContext.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\FoodBankContext.cs",
+              "RelativeDocumentMoniker": "Database Layer\\FoodBankContext.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\FoodBankContext.cs",
+              "RelativeToolTip": "Database Layer\\FoodBankContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T12:49:44.249Z",
+              "EditorCaption": ""
             }
           ]
         }
