@@ -1,5 +1,0 @@
-C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\Business Logic Layer (BLL).GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\Business Logic Layer (BLL).AssemblyInfoInputs.cache
-C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\Business Logic Layer (BLL).AssemblyInfo.cs
-C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\Business Logic Layer (BLL).csproj.CoreCompileInputs.cache
-C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\obj\Debug\net8.0\Business Logic Layer (BLL).sourcelink.json

@@ -1,10 +1,5 @@
-﻿using Database;    // Voor de FoodBankContext-klasse
-using Domain.Models;     // Voor de FoodProduct-klasse
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Voedselbank.Database;    
+using Voedselbank.Domain.Models;    
 
 
 namespace Voedselbank.DataAccess.Repositories;

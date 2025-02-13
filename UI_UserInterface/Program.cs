@@ -1,7 +1,27 @@
+using Microsoft.EntityFrameworkCore;
+using Voedselbank.Database;
+using Voedselbank.Domain.Interfaces;
+using Voedselbank.DataAccess.Repositories;
+using Voedselbank.BusinessLogic.Services;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Registreer de DbContext (SQLite in dit voorbeeld)
+builder.Services.AddDbContext<FoodBankContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+
+// Registreer de generieke Repository voor alle entiteiten
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+// Registreer specifieke services
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<FoodProductService>();
 
 var app = builder.Build();
 

@@ -1,6 +1,5 @@
-﻿using Database;          // Voor de FoodBankContext-klasse
-using Database.Models;
-using Domain.Models;
+﻿using Voedselbank.Database;          
+using Voedselbank.Domain.Inheritance;
 
 namespace Voedselbank.DataAccess.Repositories;
 

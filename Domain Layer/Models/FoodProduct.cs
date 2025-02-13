@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Database;
+﻿using Voedselbank.Database;
+using Voedselbank.Domain.Inheritance;
 
-namespace Domain.Models;
+namespace Voedselbank.Domain.Models;
 
-public class FoodProduct
+public class FoodProduct : FoodItem
 {
     public int Id { get; set; }                     // Unique ID of the product
     public string Name { get; set; }                // Name of the product

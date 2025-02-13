@@ -9,7 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "ClassLibrary1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BussinesLayer\BusinessLogic.csproj", "{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation(UI)", "UI_UserInterface\Presentation(UI).csproj", "{C0192C12-D9F2-4A83-8873-E4EA60DCFF02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "UI_UserInterface\Presentation.csproj", "{C0192C12-D9F2-4A83-8873-E4EA60DCFF02}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA582915-28DF-45EC-ABFB-AE39A6A12F8C} = {AA582915-28DF-45EC-ABFB-AE39A6A12F8C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "Database Layer\DataBase.csproj", "{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}"
 EndProject

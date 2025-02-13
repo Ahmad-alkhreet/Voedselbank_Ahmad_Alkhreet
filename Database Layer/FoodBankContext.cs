@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Domain.Models;
-using Database.Models;
+using Voedselbank.Domain.Models;
+using Voedselbank.Database.Models;
 using Microsoft.EntityFrameworkCore.Sqlite;
+using Voedselbank.Domain.Inheritance;
 
-namespace Database;
+namespace Voedselbank.Database;
 
 public class FoodBankContext : DbContext
 {

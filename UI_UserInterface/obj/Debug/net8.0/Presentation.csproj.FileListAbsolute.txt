@@ -1,0 +1,9 @@
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.AssemblyInfo.cs
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.RazorAssemblyInfo.cache
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.RazorAssemblyInfo.cs
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.sourcelink.json
