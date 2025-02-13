@@ -1,5 +1,9 @@
-﻿using Domain.Models;
-using DataAccess.Repositories;
+﻿using Microsoft.EntityFrameworkCore;               
+using Database;                 // If `DatabaseLayer` is another project
+using Domain.Models;           // If `User` and `FoodProduct` models are in Domain
+using Voedselbank.DataAccess.Repositories;       // Assuming repositories are in DataAccess(DAL)
+
+
 
 namespace BusinessLogic.Services;
 

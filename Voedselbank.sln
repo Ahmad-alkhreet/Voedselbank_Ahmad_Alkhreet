@@ -5,9 +5,9 @@ VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unittest_Voedselhulp", "xUnittest_Voedselhulp\Unittest_Voedselhulp.csproj", "{6217FBF7-C4F5-463C-8D21-626B79806BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess(DAL)", "ClassLibrary1\DataAccess(DAL).csproj", "{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "ClassLibrary1\DataAccess.csproj", "{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic(BLL)", "BussinesLayer\BusinessLogic(BLL).csproj", "{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BussinesLayer\BusinessLogic.csproj", "{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation(UI)", "UI_UserInterface\Presentation(UI).csproj", "{C0192C12-D9F2-4A83-8873-E4EA60DCFF02}"
 EndProject

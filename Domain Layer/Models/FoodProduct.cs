@@ -3,18 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DatabaseLayer.Database;
+using Database;
 
-namespace DatabaseLayer.Models
+namespace Domain.Models;
+
+public class FoodProduct
 {
-
-    public class FoodProduct
-    {
-        public int Id { get; set; }
-        public string Naam { get; set; }
-        public DateTime Houdbaarheid { get; set; }
-        public int Beschikbaarheid { get; set; }
-
-    }
-
+    public int Id { get; set; }                     // Unique ID of the product
+    public string Name { get; set; }                // Name of the product
+    public DateTime ExpiryDate { get; set; }        // Expiry date of the product
+    public int Availability { get; set; }           // Number of available units
 }

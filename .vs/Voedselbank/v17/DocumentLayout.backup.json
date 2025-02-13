@@ -7,20 +7,40 @@
       "RelativeMoniker": "D:0:0:{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}|BussinesLayer\\BusinessLogic(BLL).csproj|solutionrelative:bussineslayer\\services\\distributionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|solutionrelative:classlibrary1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}|BussinesLayer\\BusinessLogic.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\bussineslayer\\businesslogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AA582915-28DF-45EC-ABFB-AE39A6A12F8C}|BussinesLayer\\BusinessLogic.csproj|solutionrelative:bussineslayer\\businesslogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2C40A9-7589-4A1A-BB41-0AA094CE8B8F}|Domain Layer\\Domain.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\domain layer\\models\\distribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2C40A9-7589-4A1A-BB41-0AA094CE8B8F}|Domain Layer\\Domain.csproj|solutionrelative:domain layer\\models\\distribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2C40A9-7589-4A1A-BB41-0AA094CE8B8F}|Domain Layer\\Domain.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\domain layer\\models\\foodproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2C40A9-7589-4A1A-BB41-0AA094CE8B8F}|Domain Layer\\Domain.csproj|solutionrelative:domain layer\\models\\foodproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2C40A9-7589-4A1A-BB41-0AA094CE8B8F}|Domain Layer\\Domain.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\domain layer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2C40A9-7589-4A1A-BB41-0AA094CE8B8F}|Domain Layer\\Domain.csproj|solutionrelative:domain layer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\repositories\\foodproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess.csproj|solutionrelative:classlibrary1\\repositories\\foodproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess.csproj|solutionrelative:classlibrary1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\database layer\\foodbankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|solutionrelative:database layer\\foodbankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\database layer\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|solutionrelative:database layer\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess.csproj|solutionrelative:classlibrary1\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|c:\\users\\aalkhreet\\source\\voedselbank\\classlibrary1\\dataaccess(dal).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B4C1A2EF-84C0-4AAD-8FAF-096E45A76C80}|ClassLibrary1\\DataAccess(DAL).csproj|solutionrelative:classlibrary1\\dataaccess(dal).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|c:\\users\\aalkhreet\\source\\voedselbank\\database layer\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5E036BD3-DA86-48B2-BC99-C66FF3DCC625}|Database Layer\\DataBase.csproj|solutionrelative:database layer\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,25 +70,90 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BusinessLogic.csproj",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\BusinessLogic.csproj",
+              "RelativeDocumentMoniker": "BussinesLayer\\BusinessLogic.csproj",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\BusinessLogic.csproj",
+              "RelativeToolTip": "BussinesLayer\\BusinessLogic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-13T11:51:47.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\Repositories\\FoodProductRepository.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Repositories\\FoodProductRepository.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\Repositories\\FoodProductRepository.cs",
+              "RelativeToolTip": "ClassLibrary1\\Repositories\\FoodProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:44:29.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Domain Layer\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Domain Layer\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Domain Layer\\Models\\User.cs",
+              "RelativeToolTip": "Domain Layer\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:16:30.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FoodProduct.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Domain Layer\\Models\\FoodProduct.cs",
+              "RelativeDocumentMoniker": "Domain Layer\\Models\\FoodProduct.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Domain Layer\\Models\\FoodProduct.cs",
+              "RelativeToolTip": "Domain Layer\\Models\\FoodProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:16:23.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Distribution.cs",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Domain Layer\\Models\\Distribution.cs",
+              "RelativeDocumentMoniker": "Domain Layer\\Models\\Distribution.cs",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Domain Layer\\Models\\Distribution.cs",
+              "RelativeToolTip": "Domain Layer\\Models\\Distribution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:16:08.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DistributionService.cs",
               "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\Services\\DistributionService.cs",
               "RelativeDocumentMoniker": "BussinesLayer\\Services\\DistributionService.cs",
               "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\Services\\DistributionService.cs",
               "RelativeToolTip": "BussinesLayer\\Services\\DistributionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T16:50:47.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "DataBase.csproj",
               "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\DataBase.csproj",
               "RelativeDocumentMoniker": "Database Layer\\DataBase.csproj",
-              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\DataBase.csproj*",
-              "RelativeToolTip": "Database Layer\\DataBase.csproj*",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\DataBase.csproj",
+              "RelativeToolTip": "Database Layer\\DataBase.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-12T15:43:54.921Z",
@@ -76,39 +161,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "ClassLibrary1\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T15:25:21.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "DataAccess(DAL).csproj",
-              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccess(DAL).csproj",
-              "RelativeDocumentMoniker": "ClassLibrary1\\DataAccess(DAL).csproj",
-              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccess(DAL).csproj*",
-              "RelativeToolTip": "ClassLibrary1\\DataAccess(DAL).csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccess.csproj",
+              "RelativeDocumentMoniker": "ClassLibrary1\\DataAccess.csproj",
+              "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\ClassLibrary1\\DataAccess.csproj",
+              "RelativeToolTip": "ClassLibrary1\\DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-12T12:49:02.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "FoodBankContext.cs",
               "DocumentMoniker": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\FoodBankContext.cs",
               "RelativeDocumentMoniker": "Database Layer\\FoodBankContext.cs",
               "ToolTip": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\FoodBankContext.cs",
               "RelativeToolTip": "Database Layer\\FoodBankContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T12:49:44.249Z",
               "EditorCaption": ""

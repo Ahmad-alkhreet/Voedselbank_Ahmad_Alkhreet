@@ -17,7 +17,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="MySql.Data" Version="9.2.0" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -26,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BussinesLayer\BusinessLogic(BLL).csproj" />
+    <ProjectReference Include="..\BussinesLayer\BusinessLogic.csproj" />
   </ItemGroup>
 
   <ItemGroup>
