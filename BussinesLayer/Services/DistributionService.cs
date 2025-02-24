@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;               
-using Database;                 
-using Domain.Models;           
-using Voedselbank.DataAccess.Repositories;     
+﻿using Microsoft.EntityFrameworkCore;
+using Voedselbank.Database;
+using Voedselbank.Domain.Models;
+using Voedselbank.DataAccess.Repositories;
 
 
 

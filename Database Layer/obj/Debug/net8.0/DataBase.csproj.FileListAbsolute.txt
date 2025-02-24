@@ -4,3 +4,15 @@ C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.A
 C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.AssemblyInfo.cs
 C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.csproj.CoreCompileInputs.cache
 C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.sourcelink.json
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.deps.json
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.runtimeconfig.json
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.dll
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.pdb
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\Domain.dll
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\Domain.pdb
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.csproj.Up2Date
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.dll
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\refint\DataBase.dll
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.pdb
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\DataBase.genruntimeconfig.cache
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\obj\Debug\net8.0\ref\DataBase.dll

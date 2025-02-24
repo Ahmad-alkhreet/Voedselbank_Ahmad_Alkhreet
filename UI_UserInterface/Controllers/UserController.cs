@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BusinessLogic.Services; 
-using Domain.Models;  
+using Voedselbank.Domain.Models;
+using Voedselbank.BusinessLogic.Services;
+using Voedselbank.Domain.Inheritance;
 
 namespace Presentation.Controllers;
 

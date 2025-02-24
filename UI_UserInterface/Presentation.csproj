@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -21,6 +21,13 @@
     </PackageReference>
     <PackageReference Include="MySql.Data" Version="9.2.0" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BussinesLayer\BusinessLogic.csproj" />
+    <ProjectReference Include="..\ClassLibrary1\DataAccess.csproj" />
+    <ProjectReference Include="..\Database Layer\DataBase.csproj" />
+    <ProjectReference Include="..\Domain Layer\Domain.csproj" />
   </ItemGroup>
 
 </Project>

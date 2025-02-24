@@ -1,26 +1,19 @@
-﻿using Voedselbank.Database;    
-using Voedselbank.Domain.Models;    
+﻿using System.Collections.Generic;
+using System.Linq;
+using Voedselbank.Database;
+using Voedselbank.Domain.Interfaces;
+using Voedselbank.Domain.Models;
+using System.Collections.Generic;
 
 
 namespace Voedselbank.DataAccess.Repositories;
-
-public class FoodProductRepository
 {
-    private readonly FoodBankContext _context;
-
-    public FoodProductRepository(FoodBankContext context)
+    public interface IFoodProductRepository
     {
-        _context = context;
-    }
-
-    public void AddFoodProduct(FoodProduct foodProduct)
-    {
-        _context.FoodProducts.Add(foodProduct);  // Gebruikt het FoodProduct-model
-        _context.SaveChanges();
-    }
-
-    public List<FoodProduct> GetAllFoodProducts()
-    {
-        return _context.FoodProducts.ToList();  // Geeft een lijst van FoodProduct-modellen terug
+        void Add(FoodProduct product);
+        void Update(FoodProduct product);
+        void Delete(FoodProduct product);
+        FoodProduct GetById(int id);
+        IEnumerable<FoodProduct> GetAll();
     }
 }
