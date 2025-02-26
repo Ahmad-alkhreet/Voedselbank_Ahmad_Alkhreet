@@ -1,33 +1,29 @@
-﻿using Voedselbank.Domain.Interfaces;
+﻿using System.Collections.Generic;
+using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Inheritance;
-using Voedselbank.Domain.Models;
-using Voedselbank.DataAccess.Repositories;
+
 
 
 namespace Voedselbank.BusinessLogic.Services
 {
     public class UserService
     {
-        private readonly IRepository<User> _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(IRepository<User> userRepository)
+        public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
 
         public void AddUser(User user)
         {
-            _userRepository.Add(user);
+            _userRepository.AddUser(user);
         }
 
-        public User GetUserById(int id)
+        public List<User> GetAllUsers()
         {
-            return _userRepository.GetById(id);
-        }
-
-        public IEnumerable<User> GetAllUsers()
-        {
-            return _userRepository.GetAll();
+            return _userRepository.GetAllUsers();
         }
     }
 }
+

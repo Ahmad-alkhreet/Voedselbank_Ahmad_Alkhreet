@@ -2,40 +2,40 @@
 using Voedselbank.Database;
 using Voedselbank.Domain.Models;
 using Voedselbank.DataAccess.Repositories;
+using Voedselbank.Domain.Interfaces;
+using System.Linq;
 
-
-
-namespace BusinessLogic.Services;
-
-public class DistributionService
-
+namespace Voedselbank.BusinessLogic.Services
 {
-    private readonly UserRepository _userRepo;
-    private readonly FoodProductRepository _foodRepo;
-
-    public DistributionService(UserRepository userRepo, FoodProductRepository foodRepo)
+    public class DistributionService
     {
-        _userRepo = userRepo;
-        _foodRepo = foodRepo;
-    }
+        private readonly IUserRepository _userRepo;
+        private readonly IFoodProductRepository _foodRepo;
 
-    public void AssignPackages()
-    {
-        var users = _userRepo.GetAllUsers().OrderByDescending(u => u.UrgencyScore).ToList();
-        var foodProducts = _foodRepo.GetAllFoodProducts().Where(f => f.Availability > 0).ToList();
-
-        foreach (var user in users)
+        public DistributionService(IUserRepository userRepo, IFoodProductRepository foodRepo)
         {
-            foreach (var product in foodProducts)
+            _userRepo = userRepo;
+            _foodRepo = foodRepo;
+        }
+
+        public void AssignPackages()
+        {
+            var users = _userRepo.GetAllUsers()
+                                 .OrderByDescending(u => u.UrgencyScore)
+                                 .ToList();
+
+            var availableProducts = _foodRepo.GetAllFoodProducts()
+                                             .Where(p => p.Availability > 0)
+                                             .ToList();
+
+            foreach (var user in users)
             {
-                if (product.Availability > 0)
+                foreach (var product in availableProducts.Where(p => p.Availability > 0))
                 {
-                    // Logica om pakketten toe te wijzen
-                    product.Availability--;
-                    // Sla distributie op in de database
+                    product.ReduceAvailability();
+                    _foodRepo.UpdateFoodProduct(product);
                 }
             }
         }
     }
 }
-

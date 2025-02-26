@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using BusinessLogic.Services; 
+using Voedselbank.BusinessLogic.Services; 
 using Voedselbank.Domain.Models;
 using Voedselbank.BusinessLogic.Services;
 using Voedselbank.Domain.Inheritance;

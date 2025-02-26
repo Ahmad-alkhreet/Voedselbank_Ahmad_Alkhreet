@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Voedselbank.Domain.Models;
 
+
 namespace Voedselbank.Domain.Interfaces
 {
     public interface IFoodProductRepository
     {
-        void Add(FoodProduct product);
-        void Update(FoodProduct product);
-        void Delete(FoodProduct product);
-        FoodProduct GetById(int id);
-        IEnumerable<FoodProduct> GetAll();
+        void AddFoodProduct(FoodProduct product);
+        void UpdateFoodProduct(FoodProduct product);
+        void DeleteFoodProduct(FoodProduct product);
+        FoodProduct GetFoodProductById(int id);
+        List<FoodProduct> GetAllFoodProducts();
     }
-
 }

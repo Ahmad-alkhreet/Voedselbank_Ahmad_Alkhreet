@@ -9,6 +9,6 @@ namespace Voedselbank.Domain.Inheritance
     public abstract class FoodItem
     {
         public string id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }

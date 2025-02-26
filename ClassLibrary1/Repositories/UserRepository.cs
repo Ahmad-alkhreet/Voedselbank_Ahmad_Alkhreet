@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Voedselbank.Database;
+﻿using Voedselbank.Database;
 using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Inheritance;
+
+
 
 namespace Voedselbank.DataAccess.Repositories
 {
@@ -15,30 +15,30 @@ namespace Voedselbank.DataAccess.Repositories
             _context = context;
         }
 
-        public void Add(User user)
+        public void AddUser(User user)
         {
             _context.Users.Add(user);
             _context.SaveChanges();
         }
 
-        public void Update(User user)
+        public void UpdateUser(User user)
         {
             _context.Users.Update(user);
             _context.SaveChanges();
         }
 
-        public void Delete(User user)
+        public void DeleteUser(User user)
         {
             _context.Users.Remove(user);
             _context.SaveChanges();
         }
 
-        public User GetById(int id)
+        public User GetUserById(int id)
         {
             return _context.Users.Find(id);
         }
 
-        public IEnumerable<User> GetAll()
+        public List<User> GetAllUsers()
         {
             return _context.Users.ToList();
         }

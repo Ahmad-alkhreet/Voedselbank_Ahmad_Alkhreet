@@ -9,11 +9,27 @@ namespace Voedselbank.Domain.Inheritance;
 
 public class User : Person
 {
-    public int Id { get; set; }                     // Unique ID of the user
-    public string Name { get; set; }                // Name of the user
-    public string Email { get; set; }               // Email of the user
-    public string Password { get; set; }            // Password of the user
-    public int FamilyMembers { get; set; }          // Number of family members
-    public string DietaryRestrictions { get; set; } // Dietary restrictions (e.g., gluten-free)
-    public int UrgencyScore { get; set; }           // Urgency of the help request
+    public int Id { get; private set; }  // ID should be set only inside the class
+    public string Name { get; private set; }
+    public string Email { get; private set; }
+    public string Password { get; private set; }
+    public int FamilyMembers { get; private set; }
+    public string DietaryRestrictions { get; private set; }
+    public int UrgencyScore { get; private set; }
+
+    public User(int id, string name, string email, string password, int familyMembers, string dietaryRestrictions, int urgencyScore)
+    {
+        Id = id;
+        Name = name;
+        Email = email;
+        Password = password;
+        FamilyMembers = familyMembers;
+        DietaryRestrictions = dietaryRestrictions;
+        UrgencyScore = urgencyScore;
+    }
+
+    public void UpdateUrgencyScore(int newScore)
+    {
+        UrgencyScore = newScore;
+    }
 }
