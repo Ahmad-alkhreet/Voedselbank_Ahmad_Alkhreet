@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -85,10 +89,6 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.2.0, )"
-            },
-            "MySql.Data.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.22, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",

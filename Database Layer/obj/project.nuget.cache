@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iZ2/76OUQI0=",
+  "dgSpecHash": "l/HflrkiQ9w=",
   "success": true,
   "projectFilePath": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\Database Layer\\DataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\AAlkhreet\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
@@ -42,7 +43,6 @@
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\mysql.data\\9.2.0\\mysql.data.9.2.0.nupkg.sha512",
-    "C:\\Users\\AAlkhreet\\.nuget\\packages\\mysql.data.entityframeworkcore\\8.0.22\\mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\mysql.entityframeworkcore\\9.0.0\\mysql.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",

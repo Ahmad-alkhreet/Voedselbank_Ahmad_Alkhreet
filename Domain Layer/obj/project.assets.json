@@ -15,6 +15,19 @@
           }
         }
       },
+      "Dapper/2.1.66": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Google.Protobuf/3.26.1": {
         "type": "package",
         "compile": {
@@ -860,23 +873,6 @@
           }
         }
       },
-      "MySql.Data.EntityFrameworkCore/8.0.22": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.1",
-          "MySql.Data": "8.0.22"
-        },
-        "compile": {
-          "lib/netstandard2.1/MySql.Data.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/MySql.Data.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "MySql.EntityFrameworkCore/9.0.0": {
         "type": "package",
         "dependencies": {
@@ -1580,6 +1576,25 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "Dapper/2.1.66": {
+      "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "type": "package",
+      "path": "dapper/2.1.66",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.66.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "Google.Protobuf/3.26.1": {
@@ -3242,21 +3257,6 @@
         "runtimes/win-x64/native/krbcc64.dll"
       ]
     },
-    "MySql.Data.EntityFrameworkCore/8.0.22": {
-      "sha512": "o/+OMqQ0fw4f6COfRrbwqP0CKcqoFkCfb1Rl3mfgUcae3XqAkiA6t8rsjA1wnkxUvwfNYX+YM2w2Xa6u4QEUkA==",
-      "type": "package",
-      "path": "mysql.data.entityframeworkcore/8.0.22",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.dll",
-        "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.xml",
-        "lib/netstandard2.1/MySql.Data.EntityFrameworkCore.dll",
-        "lib/netstandard2.1/MySql.Data.EntityFrameworkCore.xml",
-        "mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
-        "mysql.data.entityframeworkcore.nuspec"
-      ]
-    },
     "MySql.EntityFrameworkCore/9.0.0": {
       "sha512": "X5hEeDIYj3vD9f5jmoRUztYCU163s2U+qos+dA1rtT/SnmxctPdaJ4JwbmNHAs4Q77/7/CViMlnwB0ybd3JbYg==",
       "type": "package",
@@ -4614,6 +4614,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Dapper >= 2.1.66",
       "Microsoft.EntityFrameworkCore >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Abstractions >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Analyzers >= 9.0.2",
@@ -4622,7 +4623,6 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
       "MySql.Data >= 9.2.0",
-      "MySql.Data.EntityFrameworkCore >= 8.0.22",
       "MySql.EntityFrameworkCore >= 9.0.0"
     ]
   },
@@ -4676,6 +4676,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.66, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[9.0.2, )"
@@ -4711,10 +4715,6 @@
           "MySql.Data": {
             "target": "Package",
             "version": "[9.2.0, )"
-          },
-          "MySql.Data.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[8.0.22, )"
           },
           "MySql.EntityFrameworkCore": {
             "target": "Package",

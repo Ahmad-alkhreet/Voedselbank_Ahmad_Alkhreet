@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Unittest_Voedselhulp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+974e24d4c26c9ff0b1d11c88ef5180262ef32b93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0f17af28fad882cbdf95cecc7c809ebd1c0e6ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Unittest_Voedselhulp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Unittest_Voedselhulp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

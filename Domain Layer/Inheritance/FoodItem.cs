@@ -8,7 +8,7 @@ namespace Voedselbank.Domain.Inheritance
 {
     public abstract class FoodItem
     {
-        public string id { get; set; }
+        public int id { get; set; }
         public string Name { get; set; }
     }
 }
