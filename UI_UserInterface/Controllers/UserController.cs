@@ -1,30 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Voedselbank.BusinessLogic.Services; 
-using Voedselbank.Domain.Models;
-using Voedselbank.BusinessLogic.Services;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Inheritance;
 
-namespace Presentation.Controllers;
-
-public class UserController : Controller
+namespace Voedselbank.BusinessLogic.Services
 {
-    private readonly UserService _userService;
-
-    public UserController(UserService userService)
+    public class UserService
     {
-        _userService = userService;
-    }
+        private readonly IUserRepository _userRepository;
 
-    public IActionResult Index()
-    {
-        var users = _userService.GetAllUsers();
-        return View(users);
-    }
+        public UserService(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
 
-    [HttpPost]
-    public IActionResult Create(User user)
-    {
-        _userService.AddUser(user);
-        return RedirectToAction("Index");
+        public async Task AddUserAsync(User user)
+        {
+            await _userRepository.AddUserAsync(user);
+        }
+
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        {
+            return await _userRepository.GetAllUsersAsync();
+        }
     }
 }

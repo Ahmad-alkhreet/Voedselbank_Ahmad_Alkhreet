@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Inheritance;
-
-
 
 namespace Voedselbank.BusinessLogic.Services
 {
@@ -15,15 +14,14 @@ namespace Voedselbank.BusinessLogic.Services
             _userRepository = userRepository;
         }
 
-        public void AddUser(User user)
+        public async Task AddUserAsync(User user)
         {
-            _userRepository.AddUser(user);
+            await _userRepository.AddUserAsync(user);
         }
 
-        public List<User> GetAllUsers()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            return _userRepository.GetAllUsers();
+            return await _userRepository.GetAllUsersAsync();
         }
     }
 }
-

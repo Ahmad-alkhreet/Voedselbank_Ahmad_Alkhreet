@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Voedselbank.Database;
-using Voedselbank.Domain.Interfaces;
+﻿using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Models;
-
+using Voedselbank.DataAccess.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 
 namespace Voedselbank.DataAccess.Repositories
@@ -17,32 +17,32 @@ namespace Voedselbank.DataAccess.Repositories
             _context = context;
         }
 
-        public void AddFoodProduct(FoodProduct product)
+        public async Task AddFoodProductAsync(FoodProduct product)
         {
-            _context.FoodProducts.Add(product);
-            _context.SaveChanges();
+            await _context.FoodProducts.AddAsync(product);
+            await _context.SaveChangesAsync();
         }
 
-        public void UpdateFoodProduct(FoodProduct product)
+        public async Task UpdateFoodProductAsync(FoodProduct product)
         {
             _context.FoodProducts.Update(product);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void DeleteFoodProduct(FoodProduct product)
+        public async Task DeleteFoodProductAsync(FoodProduct product)
         {
             _context.FoodProducts.Remove(product);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public FoodProduct GetFoodProductById(int id)
+        public async Task<FoodProduct> GetFoodProductByIdAsync(int id)
         {
-            return _context.FoodProducts.Find(id);
+            return await _context.FoodProducts.FindAsync(id);
         }
 
-        public List<FoodProduct> GetAllFoodProducts()
+        public async Task<IEnumerable<FoodProduct>> GetAllFoodProductsAsync()
         {
-            return _context.FoodProducts.ToList();
+            return await _context.FoodProducts.ToListAsync();
         }
     }
 }

@@ -1,48 +1,70 @@
+﻿using Voedselbank.DataAccess;
 using Voedselbank.DataAccess.Repositories;
 using Voedselbank.Domain.Interfaces;
 using Voedselbank.BusinessLogic.Services;
-using MySql.Data.MySqlClient;
-using System.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
-builder.Services.AddRazorPages();
+//  Haal de connectiestring op uit `appsettings.json`
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+//  Voeg EF Core `DbContext` toe
+builder.Services.AddDbContext<FoodBankContext>();
+
+//  Registreer repositories en injecteer `FoodBankContext`
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IFoodProductRepository, FoodProductRepository>();
+
+//  Registreer services
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<FoodProductService>();
+
+//  Voeg een distributed memory cache toe (voor sessies)
+builder.Services.AddDistributedMemoryCache();
+
+//  Voeg sessie-ondersteuning toe met configuratieopties
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout to 30 minutes
-    options.Cookie.HttpOnly = true; // Ensure the session cookie is HTTP only
-    options.Cookie.IsEssential = true; // Mark session cookie as essential
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
-// Register repositories with their interfaces
-builder.Services.AddScoped<IFoodProductRepository, FoodProductRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+//  Voeg authenticatie met cookies toe
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";  // ✅ Voorkomt redirect-loop
+        options.LogoutPath = "/Account/Logout";
+        options.AccessDeniedPath = "/Error";
+    });
 
-// Add database connection
-builder.Services.AddTransient<IDbConnection>((sp) =>
-    new MySqlConnection(builder.Configuration.GetConnectionString("MySqlConnection")));
+builder.Services.AddRazorPages(options =>
+{
+    options.Conventions.AuthorizePage("/Account/Login");
+});
 
-// Register services
-builder.Services.AddScoped<FoodProductService>();
-builder.Services.AddScoped<UserService>();
-builder.Services.AddScoped<DistributionService>();
+builder.Services.AddAuthorization();
+builder.Services.AddRazorPages();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddControllersWithViews();
 
+// Bouw de app
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
-}
-
-// Configure the HTTP request pipeline
+// Middleware-configuratie
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseSession(); // Enable session middleware
+app.UseSession(); // Activeer sessie middleware
+app.UseAuthentication();
 app.UseAuthorization();
 
-// Map Razor pages
+// Map Razor Pages en stel de standaard route in
 app.MapRazorPages();
+app.MapFallbackToPage("/Account/Login");
+
+// Start de applicatie
 app.Run();

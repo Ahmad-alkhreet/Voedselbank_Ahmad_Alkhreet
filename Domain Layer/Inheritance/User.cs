@@ -5,31 +5,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Voedselbank.Domain.Inheritance;
 
-public class User : Person
+namespace Voedselbank.Domain.Inheritance
 {
-    public int Id { get; private set; }  // ID should be set only inside the class
-    public string Name { get; private set; }
-    public string Email { get; private set; }
-    public string Password { get; private set; }
-    public int FamilyMembers { get; private set; }
-    public string DietaryRestrictions { get; private set; }
-    public int UrgencyScore { get; private set; }
-
-    public User(int id, string name, string email, string password, int familyMembers, string dietaryRestrictions, int urgencyScore)
+    public class User : Person
     {
-        Id = id;
-        Name = name;
-        Email = email;
-        Password = password;
-        FamilyMembers = familyMembers;
-        DietaryRestrictions = dietaryRestrictions;
-        UrgencyScore = urgencyScore;
-    }
+        public int Id { get; private set; }
+        public string Password { get; private set; }
+        public int FamilyMembers { get; private set; }
+        public string DietaryRestrictions { get; private set; }
+        public int UrgencyScore { get; private set; }
 
-    public void UpdateUrgencyScore(int newScore)
-    {
-        UrgencyScore = newScore;
+        // hier gebruik ik`base(...) om name en email door te geven aan Person
+        public User(int id, string name, string email, string password, int familyMembers, string dietaryRestrictions, int urgencyScore)
+            : base(name, email) // hier roep de `Person` constructor aan
+        {
+            Id = id;
+            Password = password;
+            FamilyMembers = familyMembers;
+            DietaryRestrictions = dietaryRestrictions;
+            UrgencyScore = urgencyScore;
+        }
+
+        public void UpdateUrgencyScore(int newScore)
+        {
+            UrgencyScore = newScore;
+        }
     }
 }

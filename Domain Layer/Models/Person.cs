@@ -4,11 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Voedselbank.Domain.Models;
-
-public abstract class Person
+namespace Voedselbank.Domain.Models
 {
-    public string Name { get; set; }
-    public string Email { get; set; }
-}
+    public class Person
+    {
+        protected string Name { get; set; }
+        protected string Email { get; set; }
 
+        // Constructor
+        public Person(string name, string email)
+        {
+            Name = name;
+            Email = email;
+        }
+    }
+}

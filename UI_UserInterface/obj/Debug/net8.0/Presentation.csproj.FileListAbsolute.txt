@@ -8,6 +8,7 @@ C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Presenta
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Presentation.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Presentation.pdb
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Dapper.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Google.Protobuf.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Humanizer.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\K4os.Compression.LZ4.dll
@@ -39,7 +40,7 @@ C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Microsof
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\MySql.Data.dll
-C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\MySql.Data.EntityFrameworkCore.dll
+C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -187,4 +188,3 @@ C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\refint\P
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.pdb
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\obj\Debug\net8.0\ref\Presentation.dll
-C:\Users\AAlkhreet\source\Voedselbank\UI_UserInterface\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll

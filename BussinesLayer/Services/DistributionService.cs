@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Voedselbank.Database;
+using Voedselbank.DataAccess.Repositories;
 using Voedselbank.Domain.Models;
 using Voedselbank.DataAccess.Repositories;
 using Voedselbank.Domain.Interfaces;
 using System.Linq;
+
 
 namespace Voedselbank.BusinessLogic.Services
 {
@@ -18,13 +19,13 @@ namespace Voedselbank.BusinessLogic.Services
             _foodRepo = foodRepo;
         }
 
-        public void AssignPackages()
+        public async Task AssignPackagesAsync()
         {
-            var users = _userRepo.GetAllUsers()
+            var users = (await _userRepo.GetAllUsersAsync())
                                  .OrderByDescending(u => u.UrgencyScore)
                                  .ToList();
 
-            var availableProducts = _foodRepo.GetAllFoodProducts()
+            var availableProducts = (await _foodRepo.GetAllFoodProductsAsync())
                                              .Where(p => p.Availability > 0)
                                              .ToList();
 
@@ -33,9 +34,10 @@ namespace Voedselbank.BusinessLogic.Services
                 foreach (var product in availableProducts.Where(p => p.Availability > 0))
                 {
                     product.ReduceAvailability();
-                    _foodRepo.UpdateFoodProduct(product);
+                    await _foodRepo.UpdateFoodProductAsync(product);
                 }
             }
         }
     }
 }
+

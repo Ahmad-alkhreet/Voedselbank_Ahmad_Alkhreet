@@ -4,11 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Voedselbank.Domain.Inheritance
 {
     public abstract class FoodItem
     {
-        public int id { get; set; }
-        public string Name { get; set; }
+        private int Id { get; set; }  
+        private string Name { get; set; }
+
+        // Optionele constructor
+        protected FoodItem(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
 }

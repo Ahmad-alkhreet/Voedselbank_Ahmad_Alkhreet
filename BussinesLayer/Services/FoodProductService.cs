@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Models;
 
@@ -13,14 +14,14 @@ namespace Voedselbank.BusinessLogic.Services
             _foodProductRepository = foodProductRepository;
         }
 
-        public void AddFoodProduct(FoodProduct foodProduct)
+        public async Task AddFoodProductAsync(FoodProduct foodProduct)
         {
-            _foodProductRepository.AddFoodProduct(foodProduct);
+            await _foodProductRepository.AddFoodProductAsync(foodProduct);
         }
 
-        public List<FoodProduct> GetAllFoodProducts()
+        public async Task<IEnumerable<FoodProduct>> GetAllFoodProductsAsync()
         {
-            return _foodProductRepository.GetAllFoodProducts();
+            return await _foodProductRepository.GetAllFoodProductsAsync();
         }
     }
 }

@@ -9,10 +9,10 @@ namespace Voedselbank.Domain.Interfaces
 {
     public interface IUserRepository
     {
-        void AddUser(User user);
-        void UpdateUser(User user);
-        void DeleteUser(User user);
-        User GetUserById(int id);
-        List<User> GetAllUsers();
+        Task AddUserAsync(User user);
+        Task UpdateUserAsync(User user);
+        Task DeleteUserAsync(User user);
+        Task<User> GetUserByIdAsync(int id);
+        Task<IEnumerable<User>> GetAllUsersAsync();
     }
 }

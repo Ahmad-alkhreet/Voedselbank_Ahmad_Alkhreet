@@ -8,10 +8,17 @@ namespace Voedselbank.Domain.Models
 {
     public class Distribution
     {
-        public int Id { get; private set; }
-        public int UserId { get; private set; }
-        public int FoodProductId { get; private set; }
-        public DateTime Timestamp { get; private set; }
+        private int Id { get;  set; }
+        private int UserId { get;  set; }
+        private int FoodProductId { get;  set; }
+        private DateTime Timestamp { get;  set; }
+
+
+        // geen ID nodig alleen bij de data lists gebruik 
+        // opjecten gebruiken.
+        // Data layers aanpassen
+        // data model is aangepast en ook de Layers in de document 
+
 
         public Distribution(int userId, int foodProductId)
         {

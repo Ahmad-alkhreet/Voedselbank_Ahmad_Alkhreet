@@ -1,8 +1,9 @@
-﻿using Voedselbank.Database;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Voedselbank.DataAccess.Repositories;
 using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Inheritance;
-
-
 
 namespace Voedselbank.DataAccess.Repositories
 {
@@ -15,32 +16,32 @@ namespace Voedselbank.DataAccess.Repositories
             _context = context;
         }
 
-        public void AddUser(User user)
+        public async Task AddUserAsync(User user)
         {
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
         }
 
-        public void UpdateUser(User user)
+        public async Task UpdateUserAsync(User user)
         {
             _context.Users.Update(user);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void DeleteUser(User user)
+        public async Task DeleteUserAsync(User user)
         {
             _context.Users.Remove(user);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public User GetUserById(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            return _context.Users.Find(id);
+            return await _context.Users.FindAsync(id);
         }
 
-        public List<User> GetAllUsers()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            return _context.Users.ToList();
+            return await _context.Users.ToListAsync();
         }
     }
 }
