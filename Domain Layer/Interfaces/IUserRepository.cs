@@ -14,5 +14,6 @@ namespace Voedselbank.Domain.Interfaces
         Task DeleteUserAsync(User user);
         Task<User> GetUserByIdAsync(int id);
         Task<IEnumerable<User>> GetAllUsersAsync();
+
     }
 }

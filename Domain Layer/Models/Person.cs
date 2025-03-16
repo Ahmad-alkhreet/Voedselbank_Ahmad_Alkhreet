@@ -8,10 +8,11 @@ namespace Voedselbank.Domain.Models
 {
     public class Person
     {
-        protected string Name { get; set; }
-        protected string Email { get; set; }
+        // Name en Email zijn privé instelbaar, maar publiek leesbaar
+        public string Name { get; private set; }
+        public string Email { get; private set; }
 
-        // Constructor
+        // Constructor om de eigenschappen in te stellen
         public Person(string name, string email)
         {
             Name = name;

@@ -17,11 +17,15 @@ namespace Voedselbank.Domain.Interfaces
         Task DeleteFoodProductAsync(FoodProduct product);
         Task<FoodProduct> GetFoodProductByIdAsync(int id);
         Task<IEnumerable<FoodProduct>> GetAllFoodProductsAsync();
+
+        // update voor meerdere voedselproducten
+        Task UpdateFoodProductsAsync(List<FoodProduct> updatedProducts);
     }
 }
 
 
-//✅ IEnumerable<> is beter dan List<>(ondersteunt meer collectietypes).
-//✅ Asynchrone methoden(Task<>) maken database-aanroepen efficiënter en voorkomen vastlopen.
-//✅ Consistente naamgeving met Async (volgens .NET-conventies).
-//🚀 Nu is je repository-interface klaar voor schaalbare en moderne database-operaties! 🚀
+
+// IEnumerable<> is beter dan List<>(ondersteunt meer collectietypes).
+// Asynchrone methoden(Task<>) maken database-aanroepen efficiënter en voorkomen vastlopen.
+// Consistente naamgeving met Async (volgens .NET-conventies).
+// 

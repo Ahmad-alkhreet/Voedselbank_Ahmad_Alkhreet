@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace Voedselbank.Domain.Inheritance
+namespace Voedselbank.Domain.Models
 {
+
     public class User : Person
     {
         public int Id { get; private set; }
@@ -16,20 +16,30 @@ namespace Voedselbank.Domain.Inheritance
         public string DietaryRestrictions { get; private set; }
         public int UrgencyScore { get; private set; }
 
-        // hier gebruik ik`base(...) om name en email door te geven aan Person
-        public User(int id, string name, string email, string password, int familyMembers, string dietaryRestrictions, int urgencyScore)
-            : base(name, email) // hier roep de `Person` constructor aan
+        public User(int id, string name, string email, string password, int familyMembers, string dietaryRestrictions)
+            : base(name, email)
         {
             Id = id;
             Password = password;
             FamilyMembers = familyMembers;
             DietaryRestrictions = dietaryRestrictions;
-            UrgencyScore = urgencyScore;
+            CalculateUrgencyScore();
         }
 
-        public void UpdateUrgencyScore(int newScore)
+        public void CalculateUrgencyScore()
         {
-            UrgencyScore = newScore;
+            UrgencyScore = FamilyMembers * 2;
+            if (!string.IsNullOrEmpty(DietaryRestrictions))
+                UrgencyScore += 1;
         }
+
+        public bool HasDietaryRestriction(FoodProduct product)
+        {
+            return DietaryRestrictions?
+                .Split(',', StringSplitOptions.RemoveEmptyEntries) // Voorkomt lege waarden
+                .Select(d => d.Trim()) // Verwijdert spaties rondom de restricties
+                .Any(d => d.Equals(product.GetFoodName(), StringComparison.OrdinalIgnoreCase)) ?? false;
+        }
+
     }
 }

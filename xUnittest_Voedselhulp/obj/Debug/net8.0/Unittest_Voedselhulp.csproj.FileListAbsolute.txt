@@ -102,15 +102,14 @@ C:\Users\AAlkhreet\source\Git Connect Hub Dashboard\Voedselhulp\Voedselbank\xUni
 C:\Users\AAlkhreet\source\Git Connect Hub Dashboard\Voedselhulp\Voedselbank\xUnittest_Voedselhulp\obj\Debug\net8.0\ref\Unittest_Voedselhulp.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Unittest_Voedselhulp
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\CoverletSourceRootsMapping_Unittest_Voedselhulp
-C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\testhost.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\xunit.abstractions.dll
-C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\testhost.exe
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Unittest_Voedselhulp.deps.json
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Unittest_Voedselhulp.runtimeconfig.json
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Unittest_Voedselhulp.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Unittest_Voedselhulp.pdb
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Dapper.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Google.Protobuf.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Humanizer.dll
@@ -149,7 +148,9 @@ C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Mic
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\testhost.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Moq.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\MySql.Data.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
 C:\Users\AAlkhreet\source\Voedselbank\xUnittest_Voedselhulp\bin\Debug\net8.0\Newtonsoft.Json.dll

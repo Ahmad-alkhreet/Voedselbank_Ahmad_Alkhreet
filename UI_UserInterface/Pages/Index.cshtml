@@ -3,26 +3,47 @@
     ViewData["Title"] = "Welcome to Voedselbank";
 }
 
-<div class="text-center">
+<div class="container mt-5 text-center">
     <h1 class="display-4">Welcome to Voedselbank</h1>
-    <p>Your trusted food distribution service for those in need.</p>
+    <p class="lead">Your trusted food distribution service for those in need.</p>
+
     <a class="btn btn-success btn-lg" href="/Account/Login">Get Started</a>
 </div>
 
-<div class="row mt-5">
-    <div class="col-md-4 text-center">
+<div class="row mt-5 text-center">
+    <div class="col-md-4">
         <img src="https://cdn-icons-png.flaticon.com/512/2769/2769603.png" width="100" alt="Donate Food">
-        <h3>Donate Food</h3>
+        <h3 class="mt-3">Donate Food</h3>
         <p>Help the community by donating food to those in need.</p>
     </div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-4">
         <img src="https://cdn-icons-png.flaticon.com/512/4371/4371747.png" width="100" alt="Receive Help">
-        <h3>Receive Help</h3>
+        <h3 class="mt-3">Receive Help</h3>
         <p>Apply for assistance and receive food for your family.</p>
     </div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-4">
         <img src="https://cdn-icons-png.flaticon.com/512/2989/2989848.png" width="100" alt="Volunteer">
-        <h3>Volunteer</h3>
+        <h3 class="mt-3">Volunteer</h3>
         <p>Join our team and make a difference in people's lives.</p>
     </div>
 </div>
+
+<style>
+    body {
+        background-color: #f7f6e7;
+        font-family: 'Arial', sans-serif;
+    }
+
+    h1 {
+        color: #2c6a2c;
+    }
+
+    .btn-success {
+        background-color: #2c6a2c;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #248f24;
+        }
+</style>

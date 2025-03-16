@@ -36,20 +36,28 @@ builder.Services.AddSession(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Account/Login";  // ✅ Voorkomt redirect-loop
+        options.LoginPath = "/Account/Login";
         options.LogoutPath = "/Account/Logout";
-        options.AccessDeniedPath = "/Error";
+        options.AccessDeniedPath = "/Account/AccessDenied"; // ✅ Voorkom dubbele declaratie
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
     });
+
 
 builder.Services.AddRazorPages(options =>
 {
-    options.Conventions.AuthorizePage("/Account/Login");
+    options.Conventions.AllowAnonymousToPage("/Account/Login");
+    options.Conventions.AllowAnonymousToPage("/Account/Logout");
+    options.Conventions.AuthorizeFolder("/Food"); // ✅ Vereist login voor /Food-pagina’s
+    options.Conventions.AuthorizePage("/Food/Index"); // ✅ Zorgt ervoor dat deze pagina echt beveiligd is
+
 });
 
 builder.Services.AddAuthorization();
-builder.Services.AddRazorPages();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
 
 // Bouw de app
 var app = builder.Build();
@@ -58,13 +66,16 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseSession(); // Activeer sessie middleware
+app.UseSession(); // ✅ Activeer sessie middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Map Razor Pages en stel de standaard route in
+// Map Razor Pages en Controllers correct
 app.MapRazorPages();
-app.MapFallbackToPage("/Account/Login");
+app.MapControllers(); // ✅ Belangrijk als je API's gebruikt
 
-// Start de applicatie
+// . Stel een standaardpagina in als fallback
+app.MapFallbackToPage("/Index"); // ✅ Gebruikers zonder geldige route worden naar home geleid
+
+//  Start de applicatie
 app.Run();

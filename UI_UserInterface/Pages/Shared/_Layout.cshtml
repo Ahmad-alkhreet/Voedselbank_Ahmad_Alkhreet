@@ -9,6 +9,9 @@
         body {
             background-color: #f7f6e7; /* Warm beige achtergrond */
             font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .navbar {
@@ -24,12 +27,11 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: auto; /* Voorkomt dat de footer over content valt */
         }
 
         .container {
+            flex: 1; /* Duwt de footer naar beneden */
             margin-top: 50px;
         }
 
@@ -69,8 +71,7 @@
                     }
                     else
                     {
-                        <a class="btn btn-warning text-dark" asp-page="/Account/Login">Login</a>
-
+                        <a class="btn btn-warning text-dark" href="/Account/Login">Login</a>
                     }
                 </div>
             </div>
@@ -78,7 +79,7 @@
     </nav>
 
     <div class="container">
-        @RenderBody()
+        @RenderBody() <!-- ✅ Voorkomt foutmelding, zorgt ervoor dat pagina’s correct weergegeven worden -->
     </div>
 
     <footer class="footer">
@@ -86,5 +87,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("Scripts", required: false) <!-- ✅ Laat pagina’s extra scripts toevoegen -->
 </body>
 </html>

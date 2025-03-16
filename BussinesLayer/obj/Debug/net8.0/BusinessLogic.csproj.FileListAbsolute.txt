@@ -1,3 +1,5 @@
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\bin\Debug\net8.0\xunit.abstractions.dll
+C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\bin\Debug\net8.0\BusinessLogic.deps.json
 C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\bin\Debug\net8.0\BusinessLogic.runtimeconfig.json
 C:\Users\AAlkhreet\source\Voedselbank\BussinesLayer\bin\Debug\net8.0\BusinessLogic.dll

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -23,27 +23,27 @@ namespace Voedselbank.Presentation.Pages.Account
         {
             if (Input.Email == "admin@voedselbank.com" && Input.Password == "foodbank123")
             {
-                // Maak een gebruiker aan met claims
                 var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, Input.Email),
-                    new Claim(ClaimTypes.Role, "Admin")
-                };
+        {
+            new Claim(ClaimTypes.Name, Input.Email),
+            new Claim(ClaimTypes.Role, "Admin")
+        };
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-                // FIX: Redirect naar homepagina, maar voorkom infinite redirect
+                // ✅ Redirect naar de gewenste pagina na inloggen
                 var returnUrl = Request.Query["ReturnUrl"];
                 if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                 {
                     return Redirect(returnUrl);
                 }
-                return RedirectToPage("/Index");
+
+                return RedirectToPage("/Food/Index"); //  Zorgt ervoor dat de gebruiker doorgestuurd wordt naar de juiste pagina
             }
 
-            ErrorMessage = "Invalid email or password. Please try again.";
+            ErrorMessage = "Ongeldige email of wachtwoord. Probeer opnieuw.";
             return Page();
         }
 

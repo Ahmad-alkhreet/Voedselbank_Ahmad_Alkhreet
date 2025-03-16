@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Voedselbank.Domain.Interfaces;
 using Voedselbank.Domain.Inheritance;
+using Voedselbank.Domain.Models;
 
 namespace Voedselbank.BusinessLogic.Services
 {

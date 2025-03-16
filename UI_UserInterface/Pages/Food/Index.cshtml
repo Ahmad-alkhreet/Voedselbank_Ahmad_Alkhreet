@@ -1,0 +1,32 @@
+﻿@page
+@model Voedselbank.Presentation.Pages.Food.IndexModel
+@{
+    ViewData["Title"] = "Voedselproducten";
+}
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">Beschikbare Voedselproducten</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Naam</th>
+                <th>Soort</th>
+                <th>Vervaldatum</th>
+                <th>Beschikbaar aantal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.FoodProducts)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.GetFoodName()</td>
+                    <td>@product.GetFoodSoort()</td>
+                    <td>@product.GetFoodExpiryDate().ToString("dd-MM-yyyy")</td>
+                    <td>@product.GetFoodAvailability()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

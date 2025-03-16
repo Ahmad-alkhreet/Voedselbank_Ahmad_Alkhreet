@@ -1,3 +1,5 @@
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\xunit.abstractions.dll
+C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.deps.json
 C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.runtimeconfig.json
 C:\Users\AAlkhreet\source\Voedselbank\Database Layer\bin\Debug\net8.0\DataBase.dll

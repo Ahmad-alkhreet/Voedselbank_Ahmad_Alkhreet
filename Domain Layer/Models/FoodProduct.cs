@@ -11,33 +11,30 @@ namespace Voedselbank.Domain.Models
 {
     public class FoodProduct
     {
-        public int Id { get; private set; } // EF Core zal dit automatisch invullen
-        public string Name { get; private set; }
-        public DateTime ExpiryDate { get; private set; }
-        public int Availability { get; private set; }
+        public int Id { get; private set; }
+        private string Name { get; set; }
+        private DateTime ExpiryDate { get; set; }
+        private int Availability { get; set; }
+        private string SoortFood { get; set; }
 
-        // Constructor zonder Id, EF Core regelt dit
-        public FoodProduct(string name, DateTime expiryDate, int availability)
+        public FoodProduct(string name, DateTime expiryDate, int availability, string soortFood)
         {
             Name = name;
             ExpiryDate = expiryDate;
             SetAvailability(availability);
+            SoortFood = soortFood;
         }
-
-        // Methode om te controleren of het product over datum is
         public bool IsExpired()
         {
             return DateTime.UtcNow > ExpiryDate;
         }
 
-        // Methode om voorraad te verlagen
         public void ReduceAvailability()
         {
             if (Availability > 0)
                 Availability--;
         }
 
-        // Methode om de voorraad in te stellen met een minimumwaarde
         public void SetAvailability(int amount)
         {
             if (amount < 0)
@@ -45,5 +42,13 @@ namespace Voedselbank.Domain.Models
 
             Availability = amount;
         }
+
+        // Toegevoegde getter-methoden om toegang te geven tot private properties
+        public string GetFoodName() => Name;
+        public DateTime GetFoodExpiryDate() => ExpiryDate;
+        public int GetFoodAvailability() => Availability;
+        public string GetFoodSoort() => SoortFood;
     }
 }
+
+

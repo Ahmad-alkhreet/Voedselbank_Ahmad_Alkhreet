@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1lqRG06H7dQ=",
+  "dgSpecHash": "DrAUJ/F2VOY=",
   "success": true,
   "projectFilePath": "C:\\Users\\AAlkhreet\\source\\Voedselbank\\BussinesLayer\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\AAlkhreet\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -42,6 +43,7 @@
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\AAlkhreet\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\mysql.data\\9.2.0\\mysql.data.9.2.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\mysql.entityframeworkcore\\9.0.0\\mysql.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
@@ -79,6 +81,7 @@
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
+    "C:\\Users\\AAlkhreet\\.nuget\\packages\\xunit.runner.visualstudio\\3.0.2\\xunit.runner.visualstudio.3.0.2.nupkg.sha512",
     "C:\\Users\\AAlkhreet\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
   "logs": []

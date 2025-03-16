@@ -9,36 +9,25 @@ namespace Voedselbank.Domain.Models
 {
     public class Employee : Person
     {
-        private string Role { get; set; } // Extra private veld voor functie
+        //  Role is publiek leesbaar, maar kan alleen intern worden gewijzigd
+        public string Role { get; private set; }
 
-        // Constructor
+        // Zorgt ervoor dat Employee altijd een naam, email en rol heeft
         public Employee(string name, string email, string role) : base(name, email)
         {
-            Role = role;
+            Role = role; // Role wordt ingesteld via de constructor
         }
 
-        // Publieke methode om de naam op te vragen (uit `Person`)
-        public string GetName()
-        {
-            return base.Name;
-        }
-
-        // Publieke methode om de e-mail op te vragen (uit `Person`)
-        public string GetEmail()
-        {
-            return base.Email;
-        }
-
-        // Publieke methode om de rol op te vragen
-        public string GetRole()
-        {
-            return Role;
-        }
-
-        // Methode om rol bij te werken
+        //  Publieke methode om de rol bij te werken
         public void UpdateRole(string newRole)
         {
-            Role = newRole;
+            Role = newRole; // Alleen deze methode kan Role wijzigen
+        }
+
+        // Object kan zichzelf representeren als een string
+        public override string ToString()
+        {
+            return $"{Name} ({Email}) - Role: {Role}";
         }
     }
 }

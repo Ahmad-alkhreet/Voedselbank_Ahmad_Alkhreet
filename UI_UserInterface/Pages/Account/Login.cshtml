@@ -1,26 +1,24 @@
 ﻿@page
-@using Voedselbank.Presentation.Pages.Account
-
-@model LoginModel
+@model Voedselbank.Presentation.Pages.Account.LoginModel
 @{
     ViewData["Title"] = "Login - Voedselbank";
 }
 
 <div class="login-container">
     <div class="login-box">
-        <h2 class="text-center">Login to Voedselbank</h2>
-        <p class="text-center text-muted">Enter your credentials to continue</p>
+        <h2 class="text-center">Login</h2>
+        <p class="text-center text-muted">Vul je gegevens in om verder te gaan</p>
 
         <form method="post">
             <div class="input-group">
-                <label>Email Address:</label>
+                <label class="form-label">Email:</label>
                 <input type="email" class="form-control" asp-for="Input.Email" required />
             </div>
             <div class="input-group">
-                <label>Password:</label>
+                <label class="form-label">Wachtwoord:</label>
                 <input type="password" class="form-control" asp-for="Input.Password" required />
             </div>
-            <button type="submit" class="btn btn-success btn-block w-100">Login</button>
+            <button type="submit" class="btn btn-success w-100">Inloggen</button>
         </form>
 
         @if (!string.IsNullOrEmpty(Model.ErrorMessage))
@@ -28,7 +26,9 @@
             <p class="error-message text-center">@Model.ErrorMessage</p>
         }
 
-        <p class="text-center mt-3"><a href="#">Forgot Password?</a></p>
+        <p class="text-center mt-3">
+            <a href="#" class="text-decoration-none">Wachtwoord vergeten?</a>
+        </p>
     </div>
 </div>
 
@@ -36,21 +36,26 @@
     body {
         background-color: #f7f6e7;
         font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
     }
 
     .login-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        width: 100%;
     }
 
     .login-box {
         background: white;
         padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        width: 350px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
         text-align: center;
     }
 
@@ -59,17 +64,15 @@
         text-align: left;
     }
 
-    label {
+    .form-label {
         font-weight: bold;
         color: #2c6a2c;
     }
 
-    input {
-        width: 100%;
+    .form-control {
         padding: 10px;
-        margin-top: 5px;
+        border-radius: 6px;
         border: 1px solid #ccc;
-        border-radius: 5px;
     }
 
     .btn-success {
@@ -77,15 +80,15 @@
         color: white;
         padding: 10px;
         border: none;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
         font-size: 16px;
-        transition: 0.3s;
+        transition: all 0.3s ease;
     }
 
-    .btn-success:hover {
-        background-color: #248f24;
-    }
+        .btn-success:hover {
+            background-color: #248f24;
+        }
 
     .error-message {
         color: red;

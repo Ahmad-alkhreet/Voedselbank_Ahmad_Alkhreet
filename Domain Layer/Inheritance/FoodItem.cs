@@ -19,5 +19,8 @@ namespace Voedselbank.Domain.Inheritance
             Id = id;
             Name = name;
         }
+
+        public string GetFoodName() => Name;
     }
+
 }
